@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Layout</title>
+
+    <style>
+        .container-one {
+            width: 90vw;
+            height: 100vh;
+            margin-bottom: 5%;
+            border:1px solid red; 
+        }
+
+        .container-two {
+            width: 90vw;
+            height:40vh;
+            border:1px solid rgb(54, 4, 124);
+            margin-bottom: 5%;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .row-sizeone {
+            height: 30%;        
+        }
+
+        .row-sixetwo {
+            height: 67.5%;     
+        }
+
+        .no-gutters {
+        margin-right: 0;
+        margin-left: 0;
+        }
+
+        .col {
+            padding-right: 0;
+        }    
+
+    </style>
+</head>
+
+
+<body>
+    <div class="container-one text-light">
+        <div class="row h-50 mb-2 gx-3 no-gutters">
+            <div class="col bg-secondary h-100 d-flex justify-content-center align-items-center ">Gallery</div>
+            <div class="col h-100">
+                <div class="row row-sizeone bg-secondary no-gutters">Title</div>
+                <div class="row row-sixetwo bg-secondary mt-2 no-gutters">Buy Box</div>
+            </div>
+        </div>
+        <div class="row h-25 mb-2 bg-secondary no-gutters">Description</div>
+        <div class="row h-25 bg-secondary no-gutters">Related</div>
+    </div>
+
+
+
+
+    <div class="container-two text-center">
+        <div class="row g-3">
+            <div class="col-6">
+                <div class="p-5 border bg-light border-danger">Gallery</div>
+            </div>
+            <div class="col-6">
+                <div class="p-3 border bg-light mb-2 border-danger">Title</div>
+                <div class="p-3 border bg-light border-danger">Buy Box</div>
+            </div>
+            <div class="col-12">
+                <div class="p-3 border bg-light border-danger">Description</div>
+            </div>
+            <div class="col-12">
+                <div class="p-3 border bg-light border-danger">Related</div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>

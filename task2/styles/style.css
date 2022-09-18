@@ -1,0 +1,46 @@
+.container {
+    border: 1px solid rgb(246, 243, 243);
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.navbar-toggler:active{
+    background-color: rgb(41, 3, 3);
+}
+
+.cardWelcome {
+    background-color: rgb(240, 238, 238);   
+}
+
+.cardBorder {
+    border: none;
+}
+
+.main-one {
+    height: 50vh; 
+}
+
+.cardMain {
+    background-color: #FFFFFF;
+}
+
+.cardFooter {
+    background-color: rgb(225, 225, 223);
+}
+
+.card {
+    background-color: rgb(212, 207, 207);    
+}
+
+footer {
+    height: 10vh;
+    display: flex;   
+    align-items: center;    
+}
+
+/*без медиазапроса ниже на устройствах меньше 380px блок main-one (с заданной высотов в 40vh) наезжает на блок main-two */
+@media screen and (max-width: 380px) {
+    .main-one {
+        height:auto;
+    }
+}

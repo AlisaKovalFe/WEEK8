@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Intro"; 
+    src: url("./Intro /Intro Book Regular.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    }
+    
+@font-face {
+        font-family: "Intro"; 
+        src: url("./Intro /Intro Regular Regular.otf") format("truetype"); 
+        font-style: normal; 
+        font-weight: normal; 
+} 
+
+@font-face {
+    font-family: "Intro"; 
+    src: url("./Intro /Intro Regular.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}   
+
+@font-face {
+    font-family: "Intro"; 
+    src: url("./Intro /Intro Bold Regular.otf") format("truetype"); 
+    font-style: bold; 
+    font-weight: bold; 
+}     
+

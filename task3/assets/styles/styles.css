@@ -1,0 +1,278 @@
+body {   
+    font-style: normal;
+    color: #000000;
+}
+
+.header__content,
+.about__content,
+.nav,
+.opportunities {
+    margin: 5%;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    margin-bottom: 5em; 
+}
+
+.header__button {
+    background: #5222D0;
+    border-radius: 100px;
+    border:none;
+    width: 9em;
+    font-family: 'Intro', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+
+}
+
+.button__img {
+    margin-left: 0.3em;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__content {
+    width: 55%;
+    padding-left: 3em;
+}
+
+.description,
+.card__text {
+    font-family: 'Roboto Slab';
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.about__img {
+    width: 40%;   
+    margin-right: 5%;
+    background-image: url(/WEEK8/task3/assets/images/background_cover.png);
+    background-repeat: no-repeat;
+}
+
+.img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.title {
+    margin: 0 0 0.5em;
+    padding: 0.5em 0 0;
+    font-family: 'Intro', sans-serif;
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 1.2em;
+    color: #000000;
+}
+
+.about__button {
+    margin-top: 1.2em;
+    margin-bottom: 3em;
+    background: #5222D0;
+    border-radius: 100px;
+    border: none;
+    width: 9em;
+    font-family: 'Intro', sans-serif;
+    font-weight: 400;
+    font-size: 2.2em;
+    line-height: 2.2em;
+    color: #FFFFFF;
+
+}
+
+.nav {
+    width: 60vw;
+    margin-bottom: 5em;
+    padding-left: 2em;
+    font-family: 'Roboto Slab';
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 160%;
+}
+
+@media screen and (min-width:768px) {
+    .navbar__nav{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }    
+}
+
+.nav__link {
+    font-weight: 300;
+    font-size: 1.1em;
+    line-height: 160%;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav__link-color {
+    text-decoration: none;
+    color: #5222D0;
+}
+
+.opportunities {
+    padding-left: 3em;
+}
+
+.card {
+    border-radius: 0%;
+    height: 100%;  
+    border: none;  
+}
+
+.opportunities__row {
+    margin-bottom: 3em;
+}
+
+.card__pictures {
+    width: 100%;
+    max-width: 100%; 
+    height: 40vh;
+    
+}
+
+.card__img {
+    width: 100%;
+    max-width: 100%;     
+    height: 80%;
+}
+
+.card__img-background {
+    
+    background-image: url(/WEEK8/task3/assets/images/back.svg);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    
+}
+
+.card__title {
+    
+    font-family: 'Intro', sans-serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    line-height: 1.2em;
+
+}
+
+.card__title-color {
+    color: #FFFFFF;
+}
+
+.card-color {
+    background-image: url(/WEEK8/task3/assets/images/back.svg);
+    background-repeat:repeat;
+    background-size:100%;
+    height: 90%;
+}
+
+.form-control {
+    border-radius: 0px;
+    margin-top: 1em;
+}
+
+.subscribe-button {
+    margin-top: 2em;
+    background: #5222D0;
+    border-radius: 100px;
+    border:none;
+    width: 10em;
+    height: 3em;
+    font-family: 'Intro', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .about__button {
+        margin-top: 1.2em;
+        margin-bottom: 1em;
+        width: 9em;
+        height: 2em;
+        font-size: 2em;
+        line-height: 2em;
+    }
+
+    .nav {
+        width: 80vw;
+    }
+
+    .card__pictures {
+        height: 15vh;
+        
+    }
+
+    .about__content {
+        width: 45%;
+        padding-left: 2em;
+    }
+
+    .about__img {
+        width: 40%;   
+        margin-right: 1%;
+        padding-top: 5em;
+    }
+
+    
+    .img {
+        width: 70%;
+        max-width: 100%;
+    }    
+}
+
+@media screen and (max-width:767px) {
+    .header__content,
+    .about__content,
+    .nav,
+    .opportunities {
+        margin: 3em 1em 5em;
+ }
+    .card__body {
+        text-align: center;
+    }
+
+    .card {
+        margin-bottom: 3em;
+    }
+
+    .title {
+        margin: 0 0 2em;
+        padding: 0;
+        font-size: 2.5em;
+        line-height: 1.2em;        
+    }
+
+    .about__content {
+        width: 100%;
+        padding: 2em;
+        margin-bottom: 0;
+    }
+
+    .about {
+        display:block;
+        text-align: center;
+    }
+
+    .about__img {
+        width: 90%;
+        margin: 0 2em 2em;
+        
+    }
+
+    .opportunities {
+        padding-left: 0em;
+    }
+    
+}
