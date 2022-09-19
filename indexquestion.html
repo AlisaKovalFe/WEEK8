@@ -9,57 +9,78 @@
 
     <style>
         .container-one {
-            width: 90vw;
-            height: 100vh;
+            width: 100vw;
             margin-bottom: 5%;
             border:1px solid red; 
         }
 
         .container-two {
-            width: 90vw;
+            width: 100vw;
             height:40vh;
             border:1px solid rgb(54, 4, 124);
             margin-bottom: 5%;
         }
 
-        .row {
+        .col {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-left: 0;
+            padding-right: 0;
         }
 
-        .row-sizeone {
-            height: 30%;        
+        .row-Title {
+            height: 30%;   
+            width:100%;     
         }
 
-        .row-sixetwo {
-            height: 67.5%;     
+        .row-BuyBox {
+            height: 70%;     
+            width:100%;  
+        }
+
+        .row-bottom {
+            height: 15vH;
+        }
+
+        .row-gallery {
+            height: 30vh;
+        }
+
+        .col-back {
+            background-color: aquamarine;
         }
 
         .no-gutters {
-        margin-right: 0;
-        margin-left: 0;
+            margin: 0;
+            padding: 0;
         }
-
-        .col {
-            padding-right: 0;
-        }    
-
     </style>
 </head>
 
-
 <body>
-    <div class="container-one text-light">
-        <div class="row h-50 mb-2 gx-3 no-gutters">
-            <div class="col bg-secondary h-100 d-flex justify-content-center align-items-center ">Gallery</div>
-            <div class="col h-100">
-                <div class="row row-sizeone bg-secondary no-gutters">Title</div>
-                <div class="row row-sixetwo bg-secondary mt-2 no-gutters">Buy Box</div>
+    <div class="container-one text-white text-center">
+        <div class="row row-gallery no-gutters ">
+            <div class="col m-1 bg-secondary ">Gallery</div>
+            <div class="col m-1">
+
+                <div class="row row-Title ">
+                    <div class="col bg-secondary">Title</div>
+                </div>
+                <div class="row row-BuyBox ">
+                    <div class="col mt-1 bg-secondary">Buy Box</div>
+                </div>
+
             </div>
         </div>
-        <div class="row h-25 mb-2 bg-secondary no-gutters">Description</div>
-        <div class="row h-25 bg-secondary no-gutters">Related</div>
+
+        <div class="row row-bottom no-gutters">
+            <div class="col bg-secondary m-1">Description</div> 
+        </div>
+        <div class="row row-bottom no-gutters">
+            <div class="col bg-secondary m-1">Related</div> 
+        </div>
     </div>
 
 
